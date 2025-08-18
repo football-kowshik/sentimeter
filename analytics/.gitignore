@@ -1,0 +1,6 @@
+/.quarto/
+
+# Ignore Quarto outputs for sentimeter report.
+sentimeter.html
+sentimeter_files/
+
