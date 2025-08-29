@@ -18,6 +18,9 @@ from textblob import TextBlob
 import pandas as pd
 
 from transformers import pipeline
+from wordcloud import WordCloud
+import matplotlib.pyplot as plt
+%config InlineBackend.figure_format = 'retina'
 ```
 
 ```{python}
@@ -94,6 +97,10 @@ def get_all_comments(youtube, video_id, max_comments=None):
 comments = get_all_comments(youtube, video_id = 'IYB0EFxRbL8')
 ```
 
+```{python}
+print('\n'.join(comments))
+```
+
 
 ### Step 4. Clean text
 
@@ -136,4 +143,16 @@ df = pd.DataFrame({
     "sentiment": [s['sentiment'] for s in sentiment_scores]
 })
 df
+```
+
+### Generate a word cloud
+
+```{python}
+wordcloud = WordCloud(
+    width=800 * 3,
+    height=800 * 2,
+    colormap="rainbow"
+).generate(df['cleaned'].str.cat(sep=' '))
+plt.imshow(wordcloud, interpolation='bilinear')
+plt.axis("off")
 ```
