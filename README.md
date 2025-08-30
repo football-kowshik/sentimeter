@@ -1,6 +1,6 @@
 # sentimeter
 
-> Tracking the Mood of Indian Football.
+> Sentiment doesn’t score goals, but it creates the ecosystem where future goal-scorers are born and supported.
 
 ## About
 
