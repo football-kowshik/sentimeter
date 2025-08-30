@@ -94,12 +94,14 @@ def get_all_comments(youtube, video_id, max_comments=None):
 
     return comments
 
-comments = get_all_comments(youtube, video_id = 'IYB0EFxRbL8')
+# comments = get_all_comments(youtube, video_id = 'IYB0EFxRbL8')
+
+video_ids = ['2qQFnNNLIIg', 'I8E9DcFnDak', 'wukPeOHWIuI', 'qSIecaUtPWg', 'I7DhIHLltTc']
+comments  = []
+for video_id in video_ids:
+    comments += get_all_comments(youtube, video_id)
 ```
 
-```{python}
-print('\n'.join(comments))
-```
 
 
 ### Step 4. Clean text
@@ -114,7 +116,20 @@ def clean_comment(text):
 cleaned_comments = [clean_comment(c) for c in comments]
 ```
 
-### Step 5. Sentiment analysis
+### Step 5. Generate a word cloud
+
+```{python}
+wordcloud = WordCloud(
+    width=800 * 4,
+    height=800 * 3,
+    colormap="rainbow"
+).generate(' '.join(cleaned_comments))
+plt.imshow(wordcloud, interpolation='bilinear')
+plt.axis("off")
+```
+
+
+### Step 6. Sentiment analysis
 
 ```{python}
 sentiment_pipeline = pipeline(
@@ -143,16 +158,4 @@ df = pd.DataFrame({
     "sentiment": [s['sentiment'] for s in sentiment_scores]
 })
 df
-```
-
-### Generate a word cloud
-
-```{python}
-wordcloud = WordCloud(
-    width=800 * 3,
-    height=800 * 2,
-    colormap="rainbow"
-).generate(df['cleaned'].str.cat(sep=' '))
-plt.imshow(wordcloud, interpolation='bilinear')
-plt.axis("off")
 ```
