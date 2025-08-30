@@ -15,4 +15,9 @@ pip freeze > requirements.txt
 
 ### Environment variables
 
-Copy `.env.example` into `.env` and put in the values.
+Create the environment variable at `sentimeter/analytics/.env` with the following keys.
+
+```
+YOUTUBE_API_KEY=
+GOOGLE_GENAI_API_KEY=
+```
