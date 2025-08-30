@@ -31,5 +31,3 @@ So the line basically means: India will only win a World Cup if we fix the hard 
 
 - No sentiment → no demand → no resources → no progress.
 - Strong sentiment → strong demand → resources, reforms, and talent follow naturally.
-
-> Sentiment doesn’t score goals, but it creates the ecosystem where future goal-scorers are born and supported.
