@@ -5,4 +5,4 @@ d = { 'settings': { 'branch': 'main',
                 'doc_host': 'https://football-kowshik.github.io',
                 'git_url': 'https://github.com/football-kowshik/sentimeter',
                 'lib_path': 'sentimeter'},
-  'syms': {'sentimeter.core': {'sentimeter.core.foo': ('core.html#foo', 'sentimeter/core.py')}}}
+  'syms': {'sentimeter.config': {}, 'sentimeter.core': {'sentimeter.core.foo': ('core.html#foo', 'sentimeter/core.py')}}}
