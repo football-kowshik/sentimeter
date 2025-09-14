@@ -1,0 +1,9 @@
+project:
+  output-dir: _docs
+
+website:
+  title: "sentimeter"
+  site-url: "https://football-kowshik.github.io/sentimeter"
+  description: "Tracking the mood of Indian Football"
+  repo-branch: main
+  repo-url: "https://github.com/football-kowshik/sentimeter"
