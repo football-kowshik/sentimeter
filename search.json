@@ -1,0 +1,62 @@
+[
+  {
+    "objectID": "config.html",
+    "href": "config.html",
+    "title": "Config",
+    "section": "",
+    "text": "Make a copy of .env.example as .env and fill in details of the API keys.\n\nYOUTUBE_API_KEY – API key for accessing YouTube Data API.\nGENAI_API_KEY – API key for accessing Generative AI services. Ex: Gemini from Google.\n\n\n\nYOUTUBE_API_KEY=\nGENAI_API_KEY=",
+    "crumbs": [
+      "Config"
+    ]
+  },
+  {
+    "objectID": "config.html#environment-variables",
+    "href": "config.html#environment-variables",
+    "title": "Config",
+    "section": "",
+    "text": "Make a copy of .env.example as .env and fill in details of the API keys.\n\nYOUTUBE_API_KEY – API key for accessing YouTube Data API.\nGENAI_API_KEY – API key for accessing Generative AI services. Ex: Gemini from Google.\n\n\n\nYOUTUBE_API_KEY=\nGENAI_API_KEY=",
+    "crumbs": [
+      "Config"
+    ]
+  },
+  {
+    "objectID": "config.html#data-directory",
+    "href": "config.html#data-directory",
+    "title": "Config",
+    "section": "Data directory",
+    "text": "Data directory\nData will be written into sentimeter/data/ directory.\n\n\n../data/\n\n0 directories, 0 files",
+    "crumbs": [
+      "Config"
+    ]
+  },
+  {
+    "objectID": "config.html#configuration",
+    "href": "config.html#configuration",
+    "title": "Config",
+    "section": "Configuration",
+    "text": "Configuration\nYouTube channels to fetch comments from and measure the overall sentiment.\n\n\n{\n    \"youtube\": {\n        \"channels\": [\n            \"IndianFootball\",\n            \"playmakerindia\",\n            \"DhanrajDhurve\",\n            \"meharsodhi11\"\n        ]\n    }\n}",
+    "crumbs": [
+      "Config"
+    ]
+  },
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "About",
+    "section": "",
+    "text": "India winning a FIFA World Cup will need infrastructure, coaching, talent dev, governance reform — but sentiment matters because it fuels all of these things. If the pulse of the nation shows football is trending, emotional, demanded → resources, talent, and attention naturally follow.",
+    "crumbs": [
+      "About"
+    ]
+  },
+  {
+    "objectID": "index.html#developer-guide",
+    "href": "index.html#developer-guide",
+    "title": "About",
+    "section": "Developer Guide",
+    "text": "Developer Guide\n\nInstall sentimeter in Development mode\n# Make sure sentimeter package is installed in development mode.\n$ pip install -e .\n\n# Make changes under nbs/ directory.\n# ...\n\n# Compile to have changes apply to sentimeter.\n$ nbdev_prepare",
+    "crumbs": [
+      "About"
+    ]
+  }
+]
