@@ -2,7 +2,7 @@ project:
   output-dir: _docs
 
 website:
-  title: "sentimeter"
+  title: "Sentimeter 🌡️"
   site-url: "https://football-kowshik.github.io/sentimeter"
   description: "Tracking the mood of Indian Football"
   repo-branch: main
