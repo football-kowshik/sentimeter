@@ -5,4 +5,7 @@ d = { 'settings': { 'branch': 'main',
                 'doc_host': 'https://football-kowshik.github.io',
                 'git_url': 'https://github.com/football-kowshik/sentimeter',
                 'lib_path': 'sentimeter'},
-  'syms': {'sentimeter.config': {}, 'sentimeter.core': {'sentimeter.core.foo': ('core.html#foo', 'sentimeter/core.py')}}}
+  'syms': { 'sentimeter.config': {'sentimeter.config.load_config': ('config.html#load_config', 'sentimeter/config.py')},
+            'sentimeter.core': {'sentimeter.core.foo': ('core.html#foo', 'sentimeter/core.py')},
+            'sentimeter.youtube': { 'sentimeter.youtube.fetch_channel_details': ( 'youtube.html#fetch_channel_details',
+                                                                                  'sentimeter/youtube.py')}}}
