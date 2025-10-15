@@ -8,10 +8,10 @@ import os
 from googleapiclient.discovery import build
 from dotenv import load_dotenv
 
-# %% ../../nbs/youtube/01_utils.ipynb 5
+# %% ../../nbs/youtube/01_utils.ipynb 6
 def get_api_key():
     return os.getenv("YOUTUBE_API_KEY")
 
-# %% ../../nbs/youtube/01_utils.ipynb 7
+# %% ../../nbs/youtube/01_utils.ipynb 9
 def get_resource():
     return build("youtube", "v3", developerKey = os.getenv("YOUTUBE_API_KEY"))
