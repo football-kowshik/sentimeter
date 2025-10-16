@@ -14,4 +14,4 @@ def get_api_key():
 
 # %% ../../nbs/youtube/01_utils.ipynb 9
 def get_resource():
-    return build("youtube", "v3", developerKey = os.getenv("YOUTUBE_API_KEY"))
+    return build("youtube", "v3", developerKey = os.getenv("YOUTUBE_API_KEY"), cache_discovery=False)
